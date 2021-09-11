@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding:0;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+#btn {
+    padding: 10px 20px;
+    display: flex;
+    width:10rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.dark {
+    background: black;
+    opacity: 1;
+    pointer-events: auto;
+    color: white;
+    transition: 2s;
+}
+#switch-btn {
+    color: #e32636;
+}
+.switch {
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #e32636;
+    position: absolute;
+    border-radius: 10px;
+    transition: 1s;
+
+}
+.sun {
+    color: yellow;
+    font-size: 20px;
+}
+.moon {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.slide .switch {
+    left: 50%;
+}
